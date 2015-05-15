@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Billy Ginn's website</title>
+    <meta http-equiv="Content-Language" content="English" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css' />
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1><a href="#">Billy Ginn - Sports Therapist</a></h1>
+        </div>
+        <div id="topmenu">
+            <div id="menulinks">
+                <a href="index.html" title="Home">Home</a>
+                <a href="About me.html" title="About me">About me</a>
+                <a href="My course.html" title="My course">My course</a>
+                <a href="Contacts.html" title="Contacts">Contacts</a>
+                <a href="Gallery.html" title="Gallery">Gallery</a>
+                <a href="Other.html" title="Other">Other</a>
+            </div>
+        </div>
+        <div id="content">
+            <br />
+            <div><h2>Contacts</h2></div>
+            <div><img src="http://store.picbg.net/pubpic/B8/E4/19625111a971b8e4.jpg" class="post-img" alt="Bild" /></div>
+            <div><h3>Mobile: 07582934799</h3></div>
+            <div><h3>E-Mail: bginn10@hotmail.co.uk</div>
+            <div><h3>Facebook: facebook.com/billy.ginn.5</h3></div>
+            <div><h3>Twitter: twitter.com/BGinnwhufc</h3></div>
+
+        </div>
+        <div id="footer">
+            <a href="#" title="Legal">Legal</a>
+            <a href="#" title="desihn">&copy; Billy Ginn 2015</a>
+        </div>
+    </div>
+    <div class="back-to-top">
+        <a href="#">Back to Top</a>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            // hide #back-top first
+            $(".back-to-top").hide();
+
+            // fade in #back-top
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $('.back-to-top').fadeIn();
+                    } else {
+                        $('.back-to-top').fadeOut();
+                    }
+                });
+
+                // scroll body to 0px on click
+                $('.back-to-top a').click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 800);
+                    return false;
+                });
+            });
+
+        });
+    </script>
+</body>
+</html>

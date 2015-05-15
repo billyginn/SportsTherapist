@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Billy Ginn's website</title>
+    <meta http-equiv="Content-Language" content="English" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css' />
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1><a href="#">Billy Ginn - Sports Therapist</a></h1>
+        </div>
+        <div id="topmenu">
+            <div id="menulinks">
+                <a href="index.html" title="Home">Home</a>
+                <a href="About me.html" title="About me">About me</a>
+                <a href="My course.html" title="My course">My course</a>
+                <a href="Contacts.html" title="Contacts">Contacts</a>
+                <a href="Gallery.html" title="Gallery">Gallery</a>
+                <a href="Other.html" title="Other">Other</a>
+            </div>
+        </div>
+        <div id="content">
+            <br />
+            <div><h3>A short introduction</h3></div>
+            <div><img src="http://i.imgur.com/zPoXHwP.jpg" class="post-img" alt="Bild"></div>
+
+            <p>I shall use this section to give you a quick glance into what this website is aimed at, and hopefully - get your attention. You can find detailed information about me in the appropriate sections in the navigation bar. This website was created with NON-profit goals. I am simply a first year student of Sports therapy, and am looking to provide free massages and therapies, so that I can gain experience.</p>
+
+
+            <div><img src="http://store.picbg.net/pubpic/BA/5B/4d8a9d074c6eba5b.jpg" class="post-img" alt="Bild" /></div>
+            <p>So, with that being said - please, fell free to explore my website. And if you wish to contact me - go to the "Contacts" section on my website. I have provided a few different ways for correspondence. </p>
+        </div>
+        <div id="footer">
+            <a href="#" title="Legal">Legal</a>
+            <a href="#" title="desihn">&copy; Billy Ginn 2015</a>
+        </div>
+    </div>
+    <div class="back-to-top">
+        <a href="#">Back to Top</a>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            // hide #back-top first
+            $(".back-to-top").hide();
+
+            // fade in #back-top
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $('.back-to-top').fadeIn();
+                    } else {
+                        $('.back-to-top').fadeOut();
+                    }
+                });
+
+                // scroll body to 0px on click
+                $('.back-to-top a').click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 800);
+                    return false;
+                });
+            });
+
+        });
+    </script>
+</body>
+</html>
